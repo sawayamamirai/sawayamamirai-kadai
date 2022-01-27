@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>10-1_kadai</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+</head>
+
+<body>
+  <ul>
+    <li><a href="coffee.jpg">コーヒー</a></li>
+    <li><a href="cafe.jpg">店内</a></li>
+    <li><a href="cat.jpg">猫</a></li>
+    <li><a href="sky.jpg">空</a></li>
+  </ul>
+  
+  <p><img src="coffee.jpg"></p>
+
+  <script>
+    $(function(){
+      $("a").click(function(){
+        $("img").attr("src",$(this).attr("href"));
+        return false;
+      });
+    });
+  </script>
+</body>
+
+</html>

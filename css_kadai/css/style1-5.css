@@ -1,0 +1,15 @@
+#contents{
+	width: 500px;
+}
+
+h1{
+	background-color: thistle;
+	padding: 20px 10px;
+	border: double 4px dimgray;
+}
+
+#main{
+	background-color: gainsboro;
+	padding: 10px 10px;
+	border: solid 2px dimgray;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>1-3</title>
+  </head>
+  <body>
+    <script>
+      function tax(notax){
+        const tax = 1.08;
+        var taxprice= notax * tax;
+        alert("税別:" + notax +"円\n税込:" + taxprice +"円");
+      }
+      
+      tax(600);
+    </script>
+    <p>消費税を計算する関数taxを用いて金額を表示</p>
+  </body>
+</html>

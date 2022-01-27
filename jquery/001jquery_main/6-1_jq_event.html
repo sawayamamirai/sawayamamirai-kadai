@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  <title>6-1_jq_event</title>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <a href="javascript:void(0)">画像を変更</a>
+  <p><img src="cafe.jpg" alt="カフェ"></p>
+
+  <script>
+    $(function() {
+      $("a").click(function() {
+        $("img").attr("src","coffee.jpg").attr("alt","コーヒー");
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>

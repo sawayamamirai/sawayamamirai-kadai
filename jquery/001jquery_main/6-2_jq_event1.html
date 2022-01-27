@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <title>6-2_jq_event1</title>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <ul>
+    <li><a href="cafe.jpg">カフェ</a></li>
+    <li><a href="cat.jpg">猫</a></li>
+    <li><a href="coffee.jpg">コーヒー</a></li>
+    <li><a href="sky.jpg">空</a></li>
+  </ul>
+  <p><img src="cafe.jpg" alt="カフェ"></p>
+
+  <script>
+    $(function() {
+      $("a").click(function(){
+        $("img").attr("scr",$(this).attr("href")).attr("alt",$(this).text());
+      });
+    });
+  </script>
+</body>
+</html>

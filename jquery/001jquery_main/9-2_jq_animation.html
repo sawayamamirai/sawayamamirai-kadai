@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>9-1_jq_hide&show</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+</head>
+
+<body>
+  <h1>TEST.</h1>
+  <p style="background-color:green">アニメーション　クリックで変化</p>
+
+  <script>
+    $(function () {
+      $("p").click(function(){
+        $("p").animate({"width":"400px","fontSize":"24px","opacity":"1.0"},3000);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>9-1_jq_hide&show</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+</head>
+
+<body>
+  <h1>TEST.</h1>
+  <img src="sky.jpg">
+
+  <script>
+    $(function () {
+      $("img").click(function(){
+        $("img").hide();
+      });
+    });
+
+    $(function () {
+      $("h1").click(function(){
+        $("img").show();
+      });
+    });
+  </script>
+</body>
+</html>

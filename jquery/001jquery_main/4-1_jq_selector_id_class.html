@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>4-1_jq_selector_id_class</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+</head>
+
+<body>
+  <h1>TEST.</h1>
+  <p id="id">(id)テキストを入力:</p>
+  <p id="class">(class)テキストを入力:</p>
+  <input type="text" id="text">
+  <button id="button">Click</button>
+
+  <script>
+    $("#button").click(function () {
+      var newText = $("#text").val();
+      $("#id").text( 'あなたは'+ '"' + newText + '"' + 'と書きました。(#id)');
+      $("#class").text( 'あなたは'+ '"' + newText + '"' + 'と書きました。(#class)');
+    });
+  </script>
+
+
+  
+</body>
+</html>
